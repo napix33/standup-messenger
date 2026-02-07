@@ -1,0 +1,64 @@
+body {
+  margin:0;
+  font-family: Arial;
+  background:#0f172a;
+  color:white;
+}
+
+#auth {
+  text-align:center;
+  margin-top:100px;
+}
+
+input, button {
+  padding:10px;
+  margin:5px;
+  width:90%;
+  max-width:300px;
+}
+
+#app {
+  display:flex;
+  height:100vh;
+}
+
+#contacts {
+  width:30%;
+  background:#1e293b;
+  overflow-y:auto;
+}
+
+.contact {
+  padding:10px;
+  border-bottom:1px solid #334155;
+  cursor:pointer;
+}
+
+.contact:hover {
+  background:#2563eb;
+}
+
+#chat {
+  width:70%;
+  display:flex;
+  flex-direction:column;
+}
+
+#messages {
+  flex:1;
+  padding:10px;
+  overflow-y:auto;
+}
+
+.message {
+  background:#2563eb;
+  padding:8px;
+  border-radius:8px;
+  margin:5px;
+}
+
+/* Mobile */
+@media (max-width:600px){
+  #contacts {width:40%;}
+  #chat {width:60%;}
+}

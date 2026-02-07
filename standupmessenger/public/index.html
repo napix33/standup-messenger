@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Stand Up Messenger</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="auth">
+  <h2>Stand Up Messenger</h2>
+  <input id="phone" placeholder="Телефон">
+  <input id="password" type="password" placeholder="Пароль">
+  <button onclick="register()">Регистрация</button>
+  <button onclick="login()">Войти</button>
+</div>
+
+<div id="app" style="display:none;">
+  <div id="contacts"></div>
+  <div id="chat">
+    <h3 id="chatTitle"></h3>
+    <div id="messages"></div>
+    <input id="text" placeholder="Сообщение">
+    <button onclick="sendMessage()">Отправить</button>
+  </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
